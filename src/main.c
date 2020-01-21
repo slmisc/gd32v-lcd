@@ -63,7 +63,7 @@ int main(void)
     int dy = 1 << 8;
     int ph = 0;
     for(;;)
-    {             
+    {
         // Render into framebuffer.
         uint16_t* pfb = g_fb;
         for (int y=0; y < LCD_HEIGHT; y++)
@@ -129,5 +129,5 @@ int main(void)
             }
         }
     }
-#endif 
+#endif
 }

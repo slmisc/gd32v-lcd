@@ -32,7 +32,7 @@ int approx_asin(int x)
     x = (x * 11) >> 3;
     int x2 = (x*x)>>13;
     int x3 = (x2*x)>>13;
-    int x5 = (x2*x3)>>13;    
+    int x5 = (x2*x3)>>13;
     x += (1365*x3 + 614*x5) >> 13;
     return x;
 }
