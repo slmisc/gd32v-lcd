@@ -26,3 +26,12 @@ There are two simple graphics effects in the main file, one demonstrating on-dem
 </table>
 
 Thanks to [Kevin Sangeelee](https://github.com/Kevin-Sangeelee) for the comprehensive [blog post](https://www.susa.net/wordpress/2019/10/longan-nano-gd32vf103) on GD32VF103 that was very helpful for me in understanding how to set up the interrupts on this hardware.
+
+## How to compile
+
+```shell
+pip3 install platformio
+git clone 'https://github.com/slmisc/gd32v-lcd.git'
+cd gd32v-lcd
+pio run --target upload
+```
