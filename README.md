@@ -29,9 +29,25 @@ Thanks to [Kevin Sangeelee](https://github.com/Kevin-Sangeelee) for the comprehe
 
 ## How to compile
 
+Boot your _Sipeed Longan nano_ board with "Boot0" button pressed.
+
+Run `dfu-util -l` and check the output, it must be something like:
+
+```
+Found DFU: [28e9:0189] ver=1000, devnum=2, cfg=1, intf=0, path="3-1", alt=1, name="@Option Bytes  /0x1FFFF800/01*016 g", serial="??"
+Found DFU: [28e9:0189] ver=1000, devnum=2, cfg=1, intf=0, path="3-1", alt=0, name="@Internal Flash  /0x08000000/512*002Kg", serial="??"
+```
+
+Prepare:
+
 ```shell
 pip3 install platformio
 git clone 'https://github.com/slmisc/gd32v-lcd.git'
 cd gd32v-lcd
+```
+
+Build and flash:
+
+```shell
 pio run --target upload
 ```
